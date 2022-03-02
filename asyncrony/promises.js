@@ -37,7 +37,7 @@ function createPost(post) {
 
 createPost({ title: "Post three", body: "This is post three" })
   .then(getPosts)
-  .catch((err) => console.log(err));
+  .catch((err) => (document.body.innerHTML = err));
 
 // Promise.all
 /*
